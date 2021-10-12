@@ -8,38 +8,64 @@ ul{
     padding: 0;
 }
 
-.nav{
-    margin-top: 20px;
-    margin-right: 40px;
-    text-align: right;
+.center{
+    text-align: center;
+}
+.h1{
+    font-size: 30px;
+    font-family: "Roboto";
+    font-weight: Bolder;
+    color:#ffff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.h3{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: Bolder;
+    color:#ffff;
+    text-align: center;
 }
 
 .comein{
-    animation-duration: 3s;
     animation-name: slideup;
+    animation-duration: 3s;
+    
 }
 @keyframes slideup{
+    from{
+        margin-bottom: 100%;
+    }
+    to{
+        margin-bottom: 0%;
+    }
+}
+@keyframes slideright{
     from{
         margin-top: 100%;
     }
     to{
-        margin-top: 10%;
+        margin-top: 20px;
     }
 }
+.nav{
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: right;
+    animation-name: slideright;
+    animation-duration: 3s;
 
-@keyframes slideright{
-    from{
-        
-    }
-    to{
-
-    }
+    
 }
 
 p{
     font-family: "Roboto";
-    font-weight: Bolder;
     color:#ffff
+}
+.p{
+    font-family: "Roboto";
+    color:#ffff;
+    text-align: left;
 }
 .pulsing-text {
     font-weight: bolder;
@@ -47,12 +73,13 @@ p{
     font-size: 4em;
     text-align: center;
     color: #fff0b3; 
-    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
+
     animation-name: pulsing-text;
     animation-duration: 8s;
     animation-delay: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
 
@@ -85,7 +112,7 @@ p{
     }
     50% {
       color: #ffe680;
-      text-shadow: 3px 3px 30px rgba(255, 214, 51, 0.7);
+      text-shadow: 3px 3px 40px rgba(255, 214, 51, 0.8);
       opacity: 100%;
     }
     60% {
@@ -121,6 +148,7 @@ p{
     }
     100%{
         color: #fff0b3; 
-        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.6);
+        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
+        opacity: 100%;
     }
   }

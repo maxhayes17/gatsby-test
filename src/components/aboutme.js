@@ -6,7 +6,7 @@ import '@fontsource/ubuntu'
 import { Link } from 'gatsby'
 import { Button, ButtonGroup } from "@chakra-ui/react"
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
-import { Stack, HStack, VStack } from "@chakra-ui/react"
+import { Stack, HStack, VStack, StackDivider, Flex, Spacer } from "@chakra-ui/react"
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import { Box } from "@chakra-ui/react"
 
@@ -35,14 +35,18 @@ return(
         Praesent facilisis dapibus velit eget condimentum. 
         Quisque eget finibus quam, quis scelerisque ex.
         </p>
-        <h3 class="h3" style={{marginTop:"25px"}}>Connect with me!</h3>
-        <HStack spacing={10} marginTop="5px" direction="row">
-            <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex"/></a>
-            <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex"/></a>
-            <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex"/></a>
-        </HStack>
+        <h3 class="h3" style={{marginTop:"30px"}}>Connect with me!</h3>
+        <Flex marginTop="10px">
+            <Spacer />
+            <HStack spacing={10} marginTop="10px" direction="row"
+                divider={<StackDivider borderColor="gray.200" align="stretch" />}>
+                <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex"/></a>
+                <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex"/></a>
+                <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex"/></a>
+            </HStack>
+            <Spacer />
+        </Flex>
     </Box>
-
 </div>
 )
 
