@@ -7,11 +7,24 @@ ul{
     margin: 0;
     padding: 0;
 }
+p{
+    font-family: "Roboto";
+    color:#ffff
+}
+
+.nav{
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: right;
+    animation-name: slideright;
+    animation-duration: 3s;   
+}
 
 .center{
     text-align: center;
 }
-.h1{
+
+.title{
     font-size: 30px;
     font-family: "Roboto";
     font-weight: Bolder;
@@ -19,7 +32,12 @@ ul{
     text-align: left;
     margin-bottom: 10px;
 }
-.h3{
+.aboutmetext{
+    font-family: "Roboto";
+    color:#ffff;
+    text-align: left;
+}
+.connectwithme{
     font-size: 20px;
     font-family: "Roboto";
     font-weight: bold;
@@ -27,7 +45,7 @@ ul{
     text-align: center;
 }
 
-.comein{
+.slideup{
     animation-name: slideup;
     animation-duration: 3s;
     
@@ -47,23 +65,6 @@ ul{
     to{
         margin-top: 20px;
     }
-}
-.nav{
-    margin-top: 20px;
-    margin-right: 40px;
-    text-align: right;
-    animation-name: slideright;
-    animation-duration: 3s;   
-}
-
-p{
-    font-family: "Roboto";
-    color:#ffff
-}
-.p{
-    font-family: "Roboto";
-    color:#ffff;
-    text-align: left;
 }
 
 .pulsing-text {

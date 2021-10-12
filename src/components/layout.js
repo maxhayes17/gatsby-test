@@ -24,27 +24,27 @@ const Layout = ({ pageTitle, children }) => {
                 </HStack>
               </Flex>
         </div>
-        <div className="comein">
+        <div className="slideup">
             <div style={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:"10%"}}>
                 <ul>
                     <li>
-                    <p className='pulsing-text'>Max Hayes</p>
+                        <p className='pulsing-text'>Max Hayes</p>
                     </li>
                     <li style={{marginTop:"10px"}}>
-                    <Tabs variant="soft-rounded" colorScheme="whiteAlpha" defaultIndex={0} align="center">
-                        <TabList>
-                            <Tab color="white"      _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Home</Tab>
-                            <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>About Me</Tab>
-                            <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Projects</Tab>
-                            <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Resume</Tab>
-                        </TabList>
-                        <TabPanels textAlign="center">
-                            <TabPanel><p></p></TabPanel>
-                            <TabPanel className="center"><AboutMe /></TabPanel>
-                            <TabPanel><p>Projects</p></TabPanel>
-                            <TabPanel><p>View my Resume <a href="#" style={{color:"#ffd633"}}>here</a></p></TabPanel>
-                        </TabPanels>
-                    </Tabs>
+                        <Tabs variant="soft-rounded" colorScheme="whiteAlpha" defaultIndex={0} align="center">
+                            <TabList>
+                                <Tab color="white"      _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Home</Tab>
+                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>About Me</Tab>
+                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Projects</Tab>
+                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Resume</Tab>
+                            </TabList>
+                            <TabPanels textAlign="center">
+                                <TabPanel><p></p></TabPanel>
+                                <TabPanel className="center"><AboutMe /></TabPanel>
+                                <TabPanel><p>Projects</p></TabPanel>
+                                <TabPanel><p>View my Resume <a href="#" style={{color:"#ffd633"}}>here</a></p></TabPanel>
+                            </TabPanels>
+                        </Tabs>
                     </li>
                 </ul>
             </div>

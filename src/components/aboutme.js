@@ -5,7 +5,7 @@ import '@fontsource/ubuntu'
 import {HStack, Flex, Spacer, StackDivider, Box,
     Tabs, TabList, TabPanels, Tab, TabPanel, 
     Button, ButtonGroup } from "@chakra-ui/react"
-    
+
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 
@@ -14,8 +14,8 @@ const AboutMe = () => {
 return(
 <div style={{textAlign:"center", maxWidth:"100ex"}}>
     <Box>
-        <h1 className="h1">About me</h1>
-        <p className="p">
+        <h1 className="title">About me</h1>
+        <p className="aboutmetext">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Vivamus aliquam arcu at orci luctus accumsan.
         Quisque iaculis arcu sit amet elit facilisis, id cursus augue elementum. 
@@ -32,7 +32,7 @@ return(
         Praesent facilisis dapibus velit eget condimentum. 
         Quisque eget finibus quam, quis scelerisque ex.
         </p>
-        <h3 className="h3" style={{marginTop:"40px"}}>Connect with me!</h3>
+        <h3 className="connectwithme" style={{marginTop:"40px"}}>Connect with me!</h3>
         <Flex marginTop="10px">
             <Spacer />
             <HStack spacing={5} marginTop="10px" direction="row"
