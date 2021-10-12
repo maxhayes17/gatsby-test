@@ -12,18 +12,6 @@ const IndexPage = () => {
   return (
 
     <Layout pageTitle='Home Page'>
-      <div style={{'display':'flex', 'justifyContent': 'center', 'alignItems': 'center'}}>  
-      <Button 
-      colorScheme="blackAlpha"
-      variant="outline"
-      color="white"
-      border='2px'
-      _hover={{color: 'white', opacity:"70%"}}
-      onClick={() => alert("Pressed!")
-      
-    }
-      >Button</Button>    
-      </div>
     </Layout>
 
   )

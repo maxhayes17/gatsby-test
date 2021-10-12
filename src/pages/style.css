@@ -8,6 +8,33 @@ ul{
     padding: 0;
 }
 
+.nav{
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.comein{
+    animation-duration: 3s;
+    animation-name: slideup;
+}
+@keyframes slideup{
+    from{
+        margin-top: 100%;
+    }
+    to{
+        margin-top: 10%;
+    }
+}
+
+@keyframes slideright{
+    from{
+        
+    }
+    to{
+
+    }
+}
 
 p{
     font-family: "Roboto";
@@ -18,13 +45,14 @@ p{
     font-weight: bolder;
     font-family: 'Ubuntu';
     font-size: 4em;
-    text-align: left;
-    color: #121212;
-    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff0b3; 
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.7);
     animation-name: pulsing-text;
-    animation-duration: 30s;
+    animation-duration: 8s;
+    animation-delay: 1s;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
   }
 
 
@@ -46,11 +74,11 @@ p{
   }
   @keyframes pulsing-text {
     0% {
-      color: #1e272e;
-      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+      color: #fff0b3;
+      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.3);
     }
     25% {
-      color: #fff5cc;
+      color: #fff0b3;
     }
     35% {
       color: #fff0b3;
@@ -58,15 +86,41 @@ p{
     50% {
       color: #ffe680;
       text-shadow: 3px 3px 30px rgba(255, 214, 51, 0.7);
+      opacity: 100%;
+    }
+    60% {
+      color: #ffe680;
     }
     65% {
-      color: #ffe066;
+      color: #fff0b3;
     }
-    80% {
-      color: #ffd633;
+    75% {
+      color: #fff0b3;
+      text-shadow: 0px 0px 90px rgba(255, 255, 255, 0.7);
+      opacity: 100%;
     }
-    100% {
-      color: #1e272e;
-      text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    85%{
+        color:#121212;
+        text-shadow: 0px 0px 0px rgba(18, 18, 18, 0);
+    }
+    92% {
+        color: #fff0b3;
+        text-shadow: 0px 0px 90px rgba(255, 255, 255, 0.7);
+        opacity: 25%;
+      }
+
+    95%{  
+        color: #fff0b3; 
+        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.4);
+        opacity: 50%;
+    }
+    97%{
+        color: #fff0b3; 
+        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+        opacity: 75%;
+    }
+    100%{
+        color: #fff0b3; 
+        text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.6);
     }
   }
