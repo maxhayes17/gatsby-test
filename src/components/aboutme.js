@@ -2,14 +2,11 @@ import * as React from 'react'
 import '/src/pages/style.css'
 import '@fontsource/roboto'
 import '@fontsource/ubuntu'
-
-import { Link } from 'gatsby'
-import { Button, ButtonGroup } from "@chakra-ui/react"
-import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react"
-import { Stack, HStack, VStack, StackDivider, Flex, Spacer } from "@chakra-ui/react"
+import {HStack, Flex, Spacer, StackDivider, Box,
+    Tabs, TabList, TabPanels, Tab, TabPanel, 
+    Button, ButtonGroup } from "@chakra-ui/react"
+    
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import { Box } from "@chakra-ui/react"
-
 
 
 const AboutMe = () => {
@@ -17,8 +14,8 @@ const AboutMe = () => {
 return(
 <div style={{textAlign:"center", maxWidth:"100ex"}}>
     <Box>
-        <h1 class="h1">About me</h1>
-        <p class="p">
+        <h1 className="h1">About me</h1>
+        <p className="p">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Vivamus aliquam arcu at orci luctus accumsan.
         Quisque iaculis arcu sit amet elit facilisis, id cursus augue elementum. 
@@ -35,10 +32,10 @@ return(
         Praesent facilisis dapibus velit eget condimentum. 
         Quisque eget finibus quam, quis scelerisque ex.
         </p>
-        <h3 class="h3" style={{marginTop:"30px"}}>Connect with me!</h3>
+        <h3 className="h3" style={{marginTop:"40px"}}>Connect with me!</h3>
         <Flex marginTop="10px">
             <Spacer />
-            <HStack spacing={10} marginTop="10px" direction="row"
+            <HStack spacing={5} marginTop="10px" direction="row"
                 divider={<StackDivider borderColor="gray.200" align="stretch" />}>
                 <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex"/></a>
                 <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex"/></a>
