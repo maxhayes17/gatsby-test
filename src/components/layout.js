@@ -4,9 +4,11 @@ import '@fontsource/roboto'
 import '@fontsource/ubuntu'
 
 import AboutMe from '../components/aboutme'
+import Projects from '../components/projects'
+
 import {HStack, Flex, Spacer, 
     Tabs, TabList, TabPanels, Tab, TabPanel, 
-    Button, ButtonGroup } from "@chakra-ui/react"
+    Button, ButtonGroup, Wrap, WrapItem } from "@chakra-ui/react"
 import { FaGithub, FaLinkedin, } from 'react-icons/fa'
 
 const Layout = ({ pageTitle, children }) => {
@@ -40,9 +42,9 @@ const Layout = ({ pageTitle, children }) => {
                             </TabList>
                             <TabPanels textAlign="center">
                                 <TabPanel><p></p></TabPanel>
-                                <TabPanel className="center"><AboutMe /></TabPanel>
-                                <TabPanel><p>Projects</p></TabPanel>
-                                <TabPanel><p>View my Resume <a href="#" style={{color:"#ffd633"}}>here</a></p></TabPanel>
+                                <TabPanel><AboutMe/></TabPanel>
+                                <TabPanel><Projects/></TabPanel>
+                                <TabPanel><p>View my Resume <a href="#" style={{color:"#ffd633", fontWeight:"bolder"}}>here</a></p></TabPanel>
                             </TabPanels>
                         </Tabs>
                     </li>

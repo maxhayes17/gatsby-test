@@ -45,6 +45,14 @@ p{
     text-align: center;
 }
 
+.projectcard{
+    background-color: #3A3B3C;
+    width: 250px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+
 .slideup{
     animation-name: slideup;
     animation-duration: 3s;
