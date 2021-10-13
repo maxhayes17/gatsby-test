@@ -10,7 +10,6 @@ ul{
 p{
     font-family: "Roboto";
     color:#ffff;
-    font-weight: bolder;
 }
 
 .nav{
@@ -44,7 +43,31 @@ p{
     color:#ffff;
     text-align: center;
 }
+.appear{
+    animation-name: appear;
+    animation-duration: .25s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
 
+@keyframes appear{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.cardwrap{
+    max-width: 100ex;
+    margin-top: 40px;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
 .projectcard{
     background-color: #242424;
     width: 250px;
@@ -64,11 +87,20 @@ p{
     box-shadow: 0px 0px 60px rgba(255,240,179, 0.4)
 
 }
+
+
+
+
+
+
 .buttonhover{
 
 }
 .buttonhover:hover{
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+.buttonhover:active{
+    transform: scale(1.1);
 }
 
 .slideup{

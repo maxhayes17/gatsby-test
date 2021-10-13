@@ -20,8 +20,8 @@ const Layout = ({ pageTitle, children }) => {
               <Flex>
                 <Spacer />
                 <HStack spacing={15} align="flex-end">
-                    <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex" class="buttonhover"/></a>
-                    <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex" class="buttonhover"/></a>
+                    <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex" className="buttonhover"/></a>
+                    <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex" className="buttonhover"/></a>
                 </HStack>
               </Flex>
         </div>

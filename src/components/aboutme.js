@@ -30,15 +30,17 @@ return(
         Praesent facilisis dapibus velit eget condimentum. 
         Quisque eget finibus quam, quis scelerisque ex.
         </p>
+        <div className="appear">
         <h3 className="connectwithme" style={{marginTop:"40px"}}>Connect with me!</h3>
         <Center marginTop="10px">
             <HStack spacing={5} marginTop="10px" direction="row"
                 divider={<StackDivider borderColor="gray.200" align="stretch" />}>
-                <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex" class="buttonhover"/></a>
-                <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex" class="buttonhover"/></a>
-                <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex" class="buttonhover"/></a>
+                <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex" className="buttonhover"/></a>
+                <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex" className="buttonhover"/></a>
+                <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex" className="buttonhover"/></a>
             </HStack>
         </Center >
+        </div>
     </Box>
 </Center>
 )

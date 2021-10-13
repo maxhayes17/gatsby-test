@@ -15,7 +15,7 @@ const Projects = ({ pageTitle, children }) => {
 /*./images/testicon6.png */    
   return (
     <Center>
-        <Wrap spacing={10} maxWidth="100ex" marginTop="40px" textAlign="center">
+        <Wrap spacing={10} maxWidth="100ex" marginTop="40px" class="cardwrap">
             <WrapItem>
                 <Center className="projectcard" as="button">
                     <VStack>
@@ -29,7 +29,6 @@ const Projects = ({ pageTitle, children }) => {
                             <Badge colorScheme="orange">Spotify API</Badge>
                         </WrapItem>
                     </Wrap>
-                    
                     </VStack>
                 </Center>
             </WrapItem>
