@@ -9,7 +9,8 @@ ul{
 }
 p{
     font-family: "Roboto";
-    color:#ffff
+    color:#ffff;
+    font-weight: bolder;
 }
 
 .nav{
