@@ -4,7 +4,7 @@ import '@fontsource/roboto'
 import '@fontsource/ubuntu'
 
 import AboutMe from '../components/aboutme'
-import {HStack, Flex, Spacer, VStack, Image, Heading, Code,
+import {HStack, Flex, Spacer, VStack, Image, Heading, Code, Badge,
     Tabs, TabList, TabPanels, Tab, TabPanel, 
     Button, ButtonGroup, Wrap, WrapItem, Center } from "@chakra-ui/react"
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -15,13 +15,20 @@ const Projects = ({ pageTitle, children }) => {
 /*./images/testicon6.png */    
   return (
     <Center>
-        <Wrap spacing={5} maxWidth="100ex" marginTop="40px">
+        <Wrap spacing={10} maxWidth="100ex" marginTop="40px" textAlign="center">
             <WrapItem>
-                <Center className="projectcard">
+                <Center className="projectcard" as="button">
                     <VStack>
-                    <Heading className="projectcardtitle">Spotify CD Player</Heading>
+                    <Heading className="projectcardtitle" fontSize="25px">Spotify CD Player</Heading>
                     <Image src={TestIcon} alt="Spotify CD Player" boxSize="175px"/>
-                    <Code colorScheme="orange" marginTop="30px">React, Spotify API</Code>
+                    <Wrap>
+                        <WrapItem>
+                            <Badge colorScheme="orange">React</Badge>
+                        </WrapItem>
+                        <WrapItem>
+                            <Badge colorScheme="orange">Spotify API</Badge>
+                        </WrapItem>
+                    </Wrap>
                     
                     </VStack>
                 </Center>

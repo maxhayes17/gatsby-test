@@ -29,18 +29,18 @@ const Layout = ({ pageTitle, children }) => {
             <div style={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:"10%"}}>
                 <ul>
                     <li>
-                        <p className='pulsing-text'>Max Hayes</p>
+                        <p className='pulsing-text' style={{fontFamily:"Ubuntu"}}>Max Hayes</p>
                     </li>
                     <li style={{marginTop:"10px"}}>
                         <Tabs variant="soft-rounded" colorScheme="whiteAlpha" defaultIndex={0} align="center">
                             <TabList>
-                                <Tab color="white"      _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Home</Tab>
-                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>About Me</Tab>
-                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Projects</Tab>
-                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }}>Resume</Tab>
+                                <Tab color="white"      _selected={{ color: "#ffd633", bg: "#3A3B3C" }} >Home</Tab>
+                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }} >About Me</Tab>
+                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }} >Projects</Tab>
+                                <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }} >Resume</Tab>
                             </TabList>
                             <TabPanels textAlign="center">
-                                <TabPanel><p></p></TabPanel>
+                                <TabPanel><p style={{fontStyle:"italic", marginTop:"10px"}}>"If a man is to shed the light of the sun upon other men, he must first of all have it within himself"</p></TabPanel>
                                 <TabPanel><AboutMe/></TabPanel>
                                 <TabPanel><Projects/></TabPanel>
                                 <TabPanel><p>View my Resume <a href="#" style={{color:"#ffd633", fontWeight:"bolder"}}>here</a></p></TabPanel>

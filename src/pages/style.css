@@ -16,8 +16,9 @@ p{
     margin-top: 20px;
     margin-right: 40px;
     text-align: right;
-    animation-name: slideright;
-    animation-duration: 3s;   
+    animation-name: slideup;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out;  
 }
 
 .center{
@@ -44,7 +45,7 @@ p{
 }
 
 .projectcard{
-    background-color: #3A3B3C;
+    background-color: #242424;
     width: 250px;
     height: 300px;
     border-radius: 10%;
@@ -59,6 +60,7 @@ p{
 }
 .projectcard:hover{
     transform: scale(1.05);
+    box-shadow: 0px 0px 60px rgba(255,240,179, 0.4)
 
 }
 .buttonhover{
@@ -69,8 +71,6 @@ p{
 }
 
 .slideup{
-    animation-name: slideup;
-    animation-duration: 3s;
     
 }
 @keyframes slideup{
@@ -81,12 +81,13 @@ p{
         margin-bottom: 0%;
     }
 }
+
 @keyframes slideright{
     from{
-        margin-top: 100%;
+        margin-left: 100%;
     }
     to{
-        margin-top: 20px;
+        margin-left: 0%;
     }
 }
 
@@ -118,7 +119,7 @@ p{
     }
     50% {
       color: #ffe680;
-      text-shadow: 3px 3px 40px rgba(255, 214, 51, 0.8);
+      text-shadow: 3px 3px 80px rgba(255, 214, 51, 0.8);
       opacity: 100%;
     }
     60% {
