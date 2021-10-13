@@ -5,8 +5,7 @@ import '@fontsource/ubuntu'
 
 import AboutMe from '../components/aboutme'
 import Projects from '../components/projects'
-
-import {HStack, Flex, Spacer, 
+import {HStack, Flex, Spacer,
     Tabs, TabList, TabPanels, Tab, TabPanel, 
     Button, ButtonGroup, Wrap, WrapItem } from "@chakra-ui/react"
 import { FaGithub, FaLinkedin, } from 'react-icons/fa'
@@ -21,8 +20,8 @@ const Layout = ({ pageTitle, children }) => {
               <Flex>
                 <Spacer />
                 <HStack spacing={15} align="flex-end">
-                    <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex"/></a>
-                    <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex"/></a>
+                    <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex" class="buttonhover"/></a>
+                    <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex" class="buttonhover"/></a>
                 </HStack>
               </Flex>
         </div>

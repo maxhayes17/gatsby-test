@@ -2,7 +2,7 @@ import * as React from 'react'
 import '/src/pages/style.css'
 import '@fontsource/roboto'
 import '@fontsource/ubuntu'
-import {HStack, Flex, Spacer, StackDivider, Box, Center} from "@chakra-ui/react"
+import {HStack, Flex, Spacer, StackDivider, Box, Center, Heading} from "@chakra-ui/react"
 
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
@@ -12,7 +12,7 @@ const AboutMe = () => {
 return(
 <Center maxWidth="100ex">
     <Box>
-        <h1 className="title">About me</h1>
+        <Heading className="title">About me</Heading>
         <p className="aboutmetext">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Vivamus aliquam arcu at orci luctus accumsan.
@@ -34,9 +34,9 @@ return(
         <Center marginTop="10px">
             <HStack spacing={5} marginTop="10px" direction="row"
                 divider={<StackDivider borderColor="gray.200" align="stretch" />}>
-                <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex"/></a>
-                <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex"/></a>
-                <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex"/></a>
+                <a href="mailto:mch103@pitt.edu"><FaEnvelope color="white" size="4ex" class="buttonhover"/></a>
+                <a href="http://linkedin.com/in/~max"><FaLinkedin color="white" size="4ex" class="buttonhover"/></a>
+                <a href="http://github.com/maxhayes17"><FaGithub color="white" size="4ex" class="buttonhover"/></a>
             </HStack>
         </Center >
     </Box>

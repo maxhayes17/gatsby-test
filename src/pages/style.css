@@ -26,8 +26,6 @@ p{
 
 .title{
     font-size: 30px;
-    font-family: "Roboto";
-    font-weight: Bolder;
     color:#ffff;
     text-align: left;
     margin-bottom: 10px;
@@ -50,8 +48,25 @@ p{
     width: 250px;
     height: 300px;
     border-radius: 10%;
+    transition: transform .5s;
 }
 
+.projectcardtitle{
+    font-size: 25px;
+    color:#ffff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.projectcard:hover{
+    transform: scale(1.05);
+
+}
+.buttonhover{
+
+}
+.buttonhover:hover{
+    transform: scale(1.02);
+}
 
 .slideup{
     animation-name: slideup;
