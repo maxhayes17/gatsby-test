@@ -10,12 +10,13 @@ import {HStack, Flex, Spacer, VStack, Image, Heading, Code, Badge,
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import TestIcon from '../images/testicon6.png'
+import WWIcon from '../images/ios-marketing.png'
 const Projects = ({ pageTitle, children }) => {
 
 /*./images/testicon6.png */    
   return (
     <Center>
-        <Wrap spacing={10} maxWidth="100ex" marginTop="40px" class="cardwrap">
+        <Wrap spacing={10} maxWidth="100ex" marginTop="40px" className="cardwrap">
             <WrapItem>
                 <Center className="projectcard" as="button">
                     <VStack>
@@ -32,8 +33,18 @@ const Projects = ({ pageTitle, children }) => {
                     </VStack>
                 </Center>
             </WrapItem>
+
             <WrapItem>
                 <Center className="projectcard">
+                <VStack>
+                    <Heading className="projectcardtitle" fontSize="25px">Water Watcher</Heading>
+                    <Image src={WWIcon} alt="Water Watcher" boxSize="175px" borderRadius="10%"/>
+                    <Wrap>
+                        <WrapItem>
+                            <Badge colorScheme="orange">Swift</Badge>
+                        </WrapItem>
+                    </Wrap>
+                </VStack>
 
                 </Center>
             </WrapItem>

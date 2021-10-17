@@ -40,7 +40,7 @@ const Layout = ({ pageTitle, children }) => {
                                 <Tab color="yellow.100" _selected={{ color: "#ffd633", bg: "#3A3B3C" }} >Resume</Tab>
                             </TabList>
                             <TabPanels textAlign="center">
-                                <TabPanel><p style={{fontStyle:"italic", marginTop:"10px"}}>"If a man is to shed the light of the sun upon other men, he must first of all have it within himself"</p></TabPanel>
+                                <TabPanel><p style={{fontStyle:"italic", marginTop:"10px"}}></p></TabPanel>
                                 <TabPanel><AboutMe/></TabPanel>
                                 <TabPanel><Projects/></TabPanel>
                                 <TabPanel><p>View my Resume <a href="#" style={{color:"#ffd633", fontWeight:"bolder"}}>here</a></p></TabPanel>
